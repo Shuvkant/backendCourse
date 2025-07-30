@@ -25,6 +25,9 @@ subscriptionRouter.put('/:id/cancel', (req, res) => {
   res.send({ title: "Cancel  the subscriptions" })
 })
 subscriptionRouter.get('/upcoming-renewals', (req, res) => {
+  subscriptionRouter.delete('/', (req, res) => {
+    res.send({ title: "Delete the subscriptions" })
+  })
   res.send({ title: "Get the upcomign renewals" })
 })
 
