@@ -21,6 +21,9 @@ app.use(cookieParser())
 app.get('/', (req, res) => {
   res.send("Welcome to the backend course. Shuvkant Chaudhary Phanait")
 })
+app.get('/learning/', (req, res) => {
+  res.send(req.body)
+})
 
 app.listen(PORT, async () => {
   console.log(`App is running in port  http://localhost:${PORT}`)
