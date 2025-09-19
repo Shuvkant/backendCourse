@@ -21,7 +21,7 @@ app.use(urlencoded({ extended: true }))
 app.use(cookieParser())
 
 app.get('/', (req, res) => {
-  res.send('Welcome to the backend course. Shuvkant Chaudhary Phanait')
+  res.send('Welcome to the backend course. Shuvkant Chaudhary Phanait. Its 3rd Ashoj')
 })
 app.get('/learning/', (req, res) => {
   res.send(req.body)
